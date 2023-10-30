@@ -14,4 +14,18 @@ createUser(newUser)
 function createCourse(): { name: 'mrina', price: number } {
     return { name: 'mrina', price: 10 }
 }
+
+// type aliase
+
+type user = {
+    name: string;
+    email: string;
+    isLogin: boolean;
+}
+
+function checkUser(User: user): user {
+    return ({ name: 'mrinal', email: '', isLogin: true })
+}
+checkUser({ name: 'mrinal', email: '', isLogin: true })
+
 export { }
